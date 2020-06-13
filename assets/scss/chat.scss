@@ -1,7 +1,7 @@
 .chat {
   .chat__messages {
     padding: 20px 10px;
-    overflow: scroll;
+    overflow: auto;
     background-color: white;
     height: 50vh;
     border-radius: 10px;
