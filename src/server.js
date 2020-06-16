@@ -16,10 +16,10 @@ app.get("/", (req, res) =>
 );
 
 const handleListening = () =>
-  console.log(`VV Server running : http://localhost:${PORT}`);
+  console.log(`Server running : http://localhost:${PORT}`);
 
 const server = app.listen(PORT, handleListening);
 
 const io = socketIO.listen(server);
 
-io.on("connection", (socket) => socketController(socket));
+io.on("connection", (socket) => socketController(socket, io));
